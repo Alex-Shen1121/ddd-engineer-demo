@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.13</version>
+    </parent>
+
+    <modules>
+        <module>ddd-engineer-api</module>
+        <module>ddd-engineer-starter</module>
+        <module>ddd-engineer-domain</module>
+        <module>ddd-engineer-application</module>
+        <module>ddd-engineer-infrastructure</module>
+    </modules>
+
+    <groupId>com.codingshen</groupId>
+    <artifactId>ddd-engineer-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <ddd-engineer-demo.version>1.0-SNAPSHOT</ddd-engineer-demo.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
+        <spring-doc.version>2.3.0</spring-doc.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 应用模块 -->
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-api</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-starter</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-domain</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-application</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-infrastructure</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+
+            <!-- SpringBoot 依赖 -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+                <version>${spring-doc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${spring-doc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+                <version>${spring-doc.version}</version>
+            </dependency>
+
+<!--            <dependency>-->
+<!--                <groupId>org.slf4j</groupId>-->
+<!--                <artifactId>slf4j-api</artifactId>-->
+<!--                <version>${slf4j.version}</version>-->
+<!--            </dependency>-->
+
+            <!-- 通用依赖 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections4.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
