@@ -22,6 +22,14 @@
             <groupId>com.codingshen</groupId>
             <artifactId>ddd-engineer-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.codingshen</groupId>
+            <artifactId>ddd-engineer-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.codingshen</groupId>
+            <artifactId>ddd-engineer-domain</artifactId>
+        </dependency>
 
         <!-- SpringBoot 组件 -->
         <dependency>

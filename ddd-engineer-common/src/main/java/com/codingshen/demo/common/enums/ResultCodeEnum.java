@@ -1,4 +1,4 @@
-package com.codingshen.demo.api.enums;
+package com.codingshen.demo.common.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

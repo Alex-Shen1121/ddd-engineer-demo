@@ -1,11 +1,11 @@
 package com.codingshen.demo.api.service;
 
-import com.codingshen.demo.api.common.CommonResult;
-import io.swagger.v3.oas.annotations.Operation;
+import com.codingshen.demo.api.model.request.HelloRequest;
+import com.codingshen.demo.api.model.response.HelloResponse;
+import com.codingshen.demo.common.common.CommonResult;
 
 public interface DemoApiService {
 
-    @Operation(summary = "hello")
-    public CommonResult<String> hello();
+    CommonResult<HelloResponse> hello(HelloRequest request);
 
 }
