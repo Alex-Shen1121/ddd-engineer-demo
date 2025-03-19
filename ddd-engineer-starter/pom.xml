@@ -19,19 +19,11 @@
         <!-- 应用模块 -->
         <dependency>
             <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-application</artifactId>
+            <artifactId>ddd-engineer-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-infrastructure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-domain</artifactId>
+            <artifactId>ddd-engineer-trigger</artifactId>
         </dependency>
 
         <!-- SpringBoot 组件 -->
@@ -82,6 +74,7 @@
     </dependencies>
 
     <build>
+        <finalName>ddd-engineer-starter</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

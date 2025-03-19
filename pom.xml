@@ -16,6 +16,8 @@
         <module>ddd-engineer-domain</module>
         <module>ddd-engineer-application</module>
         <module>ddd-engineer-infrastructure</module>
+        <module>ddd-engineer-trigger</module>
+        <module>ddd-engineer-common</module>
     </modules>
 
     <groupId>com.codingshen</groupId>
@@ -56,6 +58,16 @@
             <dependency>
                 <groupId>com.codingshen</groupId>
                 <artifactId>ddd-engineer-infrastructure</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-common</artifactId>
+                <version>${ddd-engineer-demo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.codingshen</groupId>
+                <artifactId>ddd-engineer-trigger</artifactId>
                 <version>${ddd-engineer-demo.version}</version>
             </dependency>
 

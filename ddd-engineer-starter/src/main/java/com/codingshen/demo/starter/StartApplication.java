@@ -12,8 +12,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  **/
 @Slf4j
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
-//@EnableDubbo(scanBasePackages = "com.codingshen.democom.codingshen.demo")
-//@MapperScan("com.codingshen.demo.infrastructure.dal.mapper")
 @SpringBootApplication(scanBasePackages = {"com.codingshen.demo"})
 public class StartApplication {
 

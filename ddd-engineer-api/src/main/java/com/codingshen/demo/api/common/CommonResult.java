@@ -27,9 +27,6 @@ public class CommonResult<T> implements Serializable {
     @Schema(name = "success", description = "请求是否成功")
     private boolean success;
 
-    @Schema(name = "extMap", description = "扩展字段(KV)，类型：{\"key\": value(类型不固定)}")
-    private Map<String, Object> extMap = new HashMap<>();
-
     /**
      * 成功
      */
