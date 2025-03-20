@@ -1,4 +1,4 @@
-package com.codingshen.demo.api.model.response;
+package com.codingshen.demo.trigger.model.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;

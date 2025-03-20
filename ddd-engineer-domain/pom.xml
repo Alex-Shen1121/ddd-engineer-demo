@@ -18,6 +18,7 @@
     </properties>
 
     <dependencies>
+        <!-- 应用模块 -->
         <dependency>
             <groupId>com.codingshen</groupId>
             <artifactId>ddd-engineer-common</artifactId>

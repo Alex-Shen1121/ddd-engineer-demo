@@ -1,4 +1,4 @@
-package com.codingshen.demo.api.model.request;
+package com.codingshen.demo.trigger.model.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
