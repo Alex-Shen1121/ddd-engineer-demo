@@ -30,6 +30,8 @@
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <spring-doc.version>2.3.0</spring-doc.version>
         <commons-collections4.version>4.4</commons-collections4.version>
+        <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <guava.version>33.0.0-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -99,6 +101,16 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons-collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
