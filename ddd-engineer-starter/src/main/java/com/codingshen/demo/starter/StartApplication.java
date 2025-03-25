@@ -4,15 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.mybatis.spring.annotation.MapperScan;
 
-/**
- * 应用启动类
- * @author shenchenyu
- * @date 2025-03-19 17:00
- **/
 @Slf4j
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 @SpringBootApplication(scanBasePackages = {"com.codingshen.demo"})
+@MapperScan("com.codingshen.demo.infrastructure.dal.dao")
 public class StartApplication {
 
 	public static void main(String[] args) {

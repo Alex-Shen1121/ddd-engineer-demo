@@ -25,6 +25,10 @@
             <groupId>com.codingshen</groupId>
             <artifactId>ddd-engineer-trigger</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.codingshen</groupId>
+            <artifactId>ddd-engineer-infrastructure</artifactId>
+        </dependency>
 
         <!-- SpringBoot 组件 -->
         <dependency>
@@ -46,6 +50,29 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- 中间件组件 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+        <!-- skywalking 日志追踪 -->
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-logback-1.x</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>apm-toolkit-trace</artifactId>
         </dependency>
 
         <!-- 测试组件 -->
@@ -120,53 +147,14 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/profiles/dev</directory>
-                    </resource>
-                    <resource>
-                        <filtering>true</filtering>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
             <properties>
-                <active-profile>dev</active-profile>
-            </properties>
-        </profile>
-        <profile>
-            <id>test</id>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/profiles/test</directory>
-                    </resource>
-                    <resource>
-                        <filtering>true</filtering>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-            <properties>
-                <active-profile>test</active-profile>
+                <profileActive>dev</profileActive>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/profiles/prod</directory>
-                    </resource>
-                    <resource>
-                        <filtering>true</filtering>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
             <properties>
-                <active-profile>prod</active-profile>
+                <profileActive>prod</profileActive>
             </properties>
         </profile>
     </profiles>

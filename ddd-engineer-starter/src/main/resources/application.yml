@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: ddd-engineer-demo
+  profiles:
+    active: dev
