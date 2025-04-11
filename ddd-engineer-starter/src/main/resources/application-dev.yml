@@ -1,5 +1,5 @@
 server:
-  port: 9300
+  port: 9301
 
 spring:
   datasource:
@@ -21,3 +21,15 @@ logging:
   level:
     root: info
   config: classpath:logback-spring.xml
+
+# apollo 配置中心
+apollo:
+  cacheDir: /opt/data/
+  cluster: default
+  meta: http://127.0.0.1:8080
+  autoUpdateInjectedSpringProperties: true
+  bootstrap:
+    enabled: false
+    namespaces: application
+    eagerLoad:
+      enabled: false
