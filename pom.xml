@@ -95,12 +95,6 @@
                 <version>${spring-doc.version}</version>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>org.slf4j</groupId>-->
-<!--                <artifactId>slf4j-api</artifactId>-->
-<!--                <version>${slf4j.version}</version>-->
-<!--            </dependency>-->
-
             <!-- 中间件依赖 -->
             <dependency>
                 <groupId>mysql</groupId>
