@@ -8,7 +8,7 @@ import org.mybatis.spring.annotation.MapperScan;
 
 @Slf4j
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
-@SpringBootApplication(scanBasePackages = {"com.codingshen.demo"})
+@SpringBootApplication(scanBasePackages = {"com.codingshen.demo", "com.codingshen.common"})
 @MapperScan("com.codingshen.demo.infrastructure.dal.dao")
 public class StartApplication {
 

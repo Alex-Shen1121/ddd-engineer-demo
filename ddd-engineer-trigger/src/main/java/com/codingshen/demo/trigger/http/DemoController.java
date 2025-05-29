@@ -1,7 +1,7 @@
 package com.codingshen.demo.trigger.http;
 
+import com.codingshen.common.result.CommonResult;
 import com.codingshen.demo.application.service.DemoAppServiceImpl;
-import com.codingshen.demo.common.common.CommonResult;
 import com.codingshen.demo.domain.model.entity.Demo;
 import com.codingshen.demo.trigger.converter.DemoApiConverter;
 import com.codingshen.demo.trigger.model.dto.DemoDTO;

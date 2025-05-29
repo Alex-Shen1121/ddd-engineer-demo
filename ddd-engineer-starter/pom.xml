@@ -19,7 +19,7 @@
         <!-- 应用模块 -->
         <dependency>
             <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-common</artifactId>
+            <artifactId>saas-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.codingshen</groupId>

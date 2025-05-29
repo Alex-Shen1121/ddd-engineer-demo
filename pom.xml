@@ -17,7 +17,6 @@
         <module>ddd-engineer-application</module>
         <module>ddd-engineer-infrastructure</module>
         <module>ddd-engineer-trigger</module>
-        <module>ddd-engineer-common</module>
     </modules>
 
     <groupId>com.codingshen</groupId>
@@ -26,6 +25,7 @@
 
     <properties>
         <ddd-engineer-demo.version>1.0-SNAPSHOT</ddd-engineer-demo.version>
+        <saas-common.version>1.0.1-SNAPSHOT</saas-common.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <spring-doc.version>2.3.0</spring-doc.version>
         <commons-collections4.version>4.4</commons-collections4.version>
@@ -69,8 +69,8 @@
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-common</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-common</artifactId>
+                <version>${saas-common.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>

@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <groupId>com.codingshen</groupId>
-            <artifactId>ddd-engineer-common</artifactId>
+            <artifactId>saas-common</artifactId>
         </dependency>
     </dependencies>
 
