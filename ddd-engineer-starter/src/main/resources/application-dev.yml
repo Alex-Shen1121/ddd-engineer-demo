@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     #数据库配置
-    url: jdbc:mysql://devops.orb.local:3306/road-map?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/road-map?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: test123456
     driver-class-name: com.mysql.cj.jdbc.Driver
