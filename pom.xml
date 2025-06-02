@@ -11,20 +11,20 @@
     </parent>
 
     <modules>
-        <module>ddd-engineer-api</module>
-        <module>ddd-engineer-starter</module>
-        <module>ddd-engineer-domain</module>
-        <module>ddd-engineer-application</module>
-        <module>ddd-engineer-infrastructure</module>
-        <module>ddd-engineer-trigger</module>
+        <module>saas-platform-api</module>
+        <module>saas-platform-starter</module>
+        <module>saas-platform-domain</module>
+        <module>saas-platform-application</module>
+        <module>saas-platform-infrastructure</module>
+        <module>saas-platform-trigger</module>
     </modules>
 
     <groupId>com.codingshen</groupId>
-    <artifactId>ddd-engineer-demo</artifactId>
+    <artifactId>saas-platform</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <ddd-engineer-demo.version>1.0-SNAPSHOT</ddd-engineer-demo.version>
+        <saas-platform.version>1.0-SNAPSHOT</saas-platform.version>
         <saas-common.version>1.0.1-SNAPSHOT</saas-common.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <spring-doc.version>2.3.0</spring-doc.version>
@@ -44,28 +44,28 @@
             <!-- 应用模块 -->
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-api</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-api</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-starter</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-starter</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-domain</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-domain</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-application</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-application</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-infrastructure</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-infrastructure</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
@@ -74,8 +74,8 @@
             </dependency>
             <dependency>
                 <groupId>com.codingshen</groupId>
-                <artifactId>ddd-engineer-trigger</artifactId>
-                <version>${ddd-engineer-demo.version}</version>
+                <artifactId>saas-platform-trigger</artifactId>
+                <version>${saas-platform.version}</version>
             </dependency>
 
             <!-- SpringBoot 依赖 -->

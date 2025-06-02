@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: saas-platform
+  profiles:
+    active: dev
