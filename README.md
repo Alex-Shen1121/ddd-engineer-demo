@@ -1,15 +1,15 @@
-# saas-platform
+# ddd-engineer-demo
 
 DDD（领域驱动设计）工程模板，用于快速搭建符合DDD架构的Java项目，包含领域层、应用层、基础设施层和接口层的标准结构，集成常用中间件和工具，支持快速开发和扩展。
 
 ## 项目结构
 
-- `saas-platform-api`：接口层，定义对外接口和DTO
-- `saas-platform-application`：应用层，协调领域层完成业务用例
-- `saas-platform-domain`：领域层，包含领域模型、领域服务、仓库接口等核心业务逻辑
-- `saas-platform-infrastructure`：基础设施层，提供数据库访问、消息队列、缓存等技术实现
-- `saas-platform-starter`：启动器，包含配置、日志、依赖管理等公共模块
-- `saas-platform-trigger`：触发器，用于定时任务、事件监听等触发型功能
+- `ddd-engineer-api`：接口层，定义对外接口和DTO
+- `ddd-engineer-application`：应用层，协调领域层完成业务用例
+- `ddd-engineer-domain`：领域层，包含领域模型、领域服务、仓库接口等核心业务逻辑
+- `ddd-engineer-infrastructure`：基础设施层，提供数据库访问、消息队列、缓存等技术实现
+- `ddd-engineer-starter`：启动器，包含配置、日志、依赖管理等公共模块
+- `ddd-engineer-trigger`：触发器，用于定时任务、事件监听等触发型功能
 
 ## 功能特性
 
@@ -22,10 +22,10 @@ DDD（领域驱动设计）工程模板，用于快速搭建符合DDD架构的Ja
 
 ## 安装步骤
 
-1. 克隆项目到本地：`git clone https://github.com/your-repo/saas-platform.git`
+1. 克隆项目到本地：`git clone https://github.com/your-repo/ddd-engineer-demo.git`
 2. 使用Maven构建项目：`mvn clean install`
 3. 配置数据库、Redis等中间件连接信息（修改`application-dev.yml`或`application-prod.yml`）
-4. 启动应用：`java -jar saas-platform-starter/target/saas-platform-starter-1.0.0.jar`
+4. 启动应用：`java -jar ddd-engineer-starter/target/ddd-engineer-starter-1.0.0.jar`
 
 ## 日志配置说明
 
