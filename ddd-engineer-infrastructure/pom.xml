@@ -40,6 +40,10 @@
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
         </dependency>
+        <dependency>
+            <artifactId>leaf-boot-starter</artifactId>
+            <groupId>com.sankuai.inf.leaf</groupId>
+        </dependency>
     </dependencies>
 
     <build>

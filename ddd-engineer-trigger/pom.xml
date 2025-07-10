@@ -30,6 +30,10 @@
             <groupId>com.codingshen</groupId>
             <artifactId>ddd-engineer-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.codingshen</groupId>
+            <artifactId>ddd-engineer-infrastructure</artifactId>
+        </dependency>
 
         <!-- SpringBoot 组件 -->
         <dependency>
